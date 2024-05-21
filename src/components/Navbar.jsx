@@ -1,4 +1,4 @@
-const FrameComponent5 = () => {
+const Navbar = () => {
   return (
     <header className="self-stretch flex flex-row items-start justify-end pt-0 px-[35px] pb-[31px] box-border max-w-full shrink-0">
       <div className="w-[1587px] [backdrop-filter:blur(14px)] rounded-3xs bg-gray-100 flex flex-row items-end justify-between py-[13px] pr-[34px] pl-[29px] box-border shrink-0 [debug_commit:1de1738] gap-[20px] max-w-full z-[1]">
@@ -61,4 +61,4 @@ const FrameComponent5 = () => {
   );
 };
 
-export default FrameComponent5;
+export default Navbar;
