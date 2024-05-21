@@ -1,3 +1,4 @@
+import React from "react";
 import EventImage from "./EventImage";
 import EventInfo from "./EventInfo";
 import EventSeeMore from "./EventSeeMore";

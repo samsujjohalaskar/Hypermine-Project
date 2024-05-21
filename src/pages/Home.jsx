@@ -9,7 +9,7 @@ const EventsPageorganiser = () => {
       <Navbar />
       <CreateEvents />
       <EventsContainer />
-      <div className="absolute !m-[0] top-[0px] bottom-[0px] left-[0px]">
+      <div className="fixed !m-[0] top-[0px] bottom-[0px] left-[0px]">
         <Sidebar />
       </div>
     </div>

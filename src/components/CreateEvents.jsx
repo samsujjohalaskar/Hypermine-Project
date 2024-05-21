@@ -1,9 +1,11 @@
+import React from "react";
 import { Button } from "@mui/material";
+import { FaPlus } from "react-icons/fa6";
 
 const CreateEvents = () => {
   return (
     <div className="self-stretch flex flex-row items-start justify-end pt-0 px-[35px] pb-[31px] box-border max-w-full shrink-0 text-left text-11xl text-text1 font-body-2">
-      <div className="w-[1579px] flex flex-row items-start justify-start relative max-w-full">
+      <div className="w-[1579px] flex flex-row items-start justify-start relative max-w-full pt-32">
         <div className="flex-1 rounded-xl bg-gray-400 flex flex-col items-start justify-start pt-[50px] pb-[110px] pr-[76px] pl-[105px] box-border gap-[15px] shrink-0 [debug_commit:1de1738] max-w-full z-[2] mq925:pl-[26px] mq925:box-border mq1350:pl-[52px] mq1350:pr-[38px] mq1350:box-border">
           <h1 className="m-0 relative text-inherit font-bold font-inherit mq925:text-5xl mq450:text-lg">
             Create Events
@@ -19,8 +21,10 @@ const CreateEvents = () => {
               </h2>
             </div>
             <Button
-              className="h-14 w-[258px] font-bold"
-              startIcon={<img width="24px" height="24px" src="/vector-1.svg" />}
+              className="h-14 w-[258px] font-bold text-lg gap-x-4"
+              startIcon={
+                <FaPlus style={{ fontSize: "26px" }} />
+              }
               disableElevation={true}
               variant="contained"
               sx={{
@@ -30,9 +34,15 @@ const CreateEvents = () => {
                 background: "#2656d6",
                 border: "#2656d6 solid 1px",
                 borderRadius: "8px",
-                "&:hover": { background: "#2656d6" },
+                "&:hover": {
+                  background: "#fff",
+                  color: "#000",
+                },
                 width: 258,
                 height: 56,
+                "&:hover svg": {
+                  fill: "#000",
+                },
               }}
             >
               Create Event

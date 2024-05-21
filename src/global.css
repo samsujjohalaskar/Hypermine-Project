@@ -13,3 +13,9 @@ body {
 ::after {
   border-width: 0;
 }
+
+@media (max-width: 1914px) {
+  .adjust-pl {
+    padding-left: 35px !important; /* using !important to override inline styles */
+  }
+}
