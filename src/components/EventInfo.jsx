@@ -2,6 +2,7 @@ import React from 'react'
 import EventTags from './EventTags'
 import EventActiveness from './EventActiveness';
 import EventReward from './EventReward';
+import { FaCircleChevronRight } from "react-icons/fa6";
 
 const EventInfo = ({ event }) => {
 
@@ -67,14 +68,8 @@ const EventInfo = ({ event }) => {
                 </div>
                 <div className="flex flex-row flex-wrap items-center justify-start py-0 pr-[286px] pl-0 gap-[10px] text-3xs text-black mq925:pr-[143px] mq925:box-border mq450:pr-5 mq450:box-border">
                     <EventTags tags={event.tags} />
-                    <div className="h-3.5 w-3.5 relative">
-                        <div className="absolute top-[0px] left-[0px] rounded-2xs bg-text4 w-full h-full" />
-                        <img
-                            className="absolute top-[3.5px] left-[5px] w-1 h-[7.3px] z-[1]"
-                            loading="lazy"
-                            alt=""
-                            src="/vector-2.svg"
-                        />
+                    <div className="h-3.5 w-3.5 relative z-1">
+                        <FaCircleChevronRight  className='text-text3' size={12}/>
                     </div>
                 </div>
             </div>

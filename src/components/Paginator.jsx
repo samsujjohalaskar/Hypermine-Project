@@ -41,7 +41,7 @@ const Paginator = ({ pageNumber, setPageNumber }) => {
               {pageNumber === page && (
                 <div className="absolute top-[0px] left-[0px] rounded-[50%] bg-primary-2 w-full h-full" />
               )}
-              <div className="absolute top-[5px] left-[4px] font-semibold flex items-end justify-center w-3.5 h-[13px] z-[1]">
+              <div className="absolute top-[5px] left-[4px] font-semibold flex items-end justify-center w-3.5 h-[13px]">
                 {page}
               </div>
             </div>

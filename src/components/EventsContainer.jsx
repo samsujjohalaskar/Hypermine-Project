@@ -42,7 +42,7 @@ const EventsContainer = () => {
                         </div>
                     </div>
                     <TextField
-                        className="[border:none] bg-[transparent] h-10 w-[464px] font-body-2 text-smi-6 text-gray-200 max-w-full z-[1]"
+                        className="[border:none] bg-[transparent] h-10 w-[464px] font-body-2 text-smi-6 text-gray-200 max-w-full z-1"
                         placeholder="Search events by name or tags"
                         variant="outlined"
                         InputProps={{

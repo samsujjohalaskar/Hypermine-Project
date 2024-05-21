@@ -9,7 +9,7 @@ const EventReward = () => {
                 src="/group-48098456.svg"
             />
             <img
-                className="absolute top-[5px] left-[5px] w-[15px] h-[15px] object-contain z-[1]"
+                className="absolute top-[5px] left-[5px] w-[15px] h-[15px] object-contain"
                 loading="lazy"
                 alt=""
                 src="/guaranteed-1@2x.png"

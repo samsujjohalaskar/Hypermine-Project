@@ -1,11 +1,12 @@
 import React from "react";
 import { Button } from "@mui/material";
+import { RxCross2 } from "react-icons/rx";
 
-const Sidebar = () => {
+const Sidebar = ({ showSidebar, onShowbar }) => {
   return (
-    <div className="top-[2px] left-[0px] rounded-xl bg-gainsboro box-border w-[265px] h-[2867px] z-[1] text-left text-sm text-text3 font-body-2 border-[1px] border-solid border-stroke-2">
-      <div className="absolute top-[0px] left-[0px] rounded-xl bg-gainsboro box-border w-full h-full hidden border-[1px] border-solid border-stroke-2" />
-      <div className="absolute top-[172px] left-[23px] rounded-lg bg-gray-400 box-border w-[221px] overflow-hidden flex flex-col items-start justify-start py-[9px] px-0 z-[2] text-xs border-[1px] border-solid border-stroke1">
+    <div className={`top-[2px] ${!showSidebar ? "mq1825:hidden bg-gray-100" : "bg-prymary-blue"} left-[0px] rounded-xl box-border w-[265px] h-screen text-left text-sm text-text3 font-body-2 border-[1px] border-solid border-stroke-2`}>
+      <div className="absolute top-[0px] left-[0px] rounded-xl bg-gainsboro box-border w-full h-screen hidden border-[1px] border-solid border-stroke-2" />
+      <div className="absolute top-[172px] left-[23px] rounded-lg bg-gray-400 box-border w-[221px] overflow-hidden flex flex-col items-start justify-start py-[9px] px-0 text-xs border-[1px] border-solid border-stroke1">
         <div className="w-[157px] flex flex-col items-start justify-start py-0 px-5 box-border">
           <div className="self-stretch flex flex-row items-center justify-start gap-[12px]">
             <img
@@ -19,7 +20,8 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[40px] left-[24px] w-[151px] flex flex-row items-center justify-start gap-[23px] z-[2]">
+      <RxCross2 onClick={onShowbar} className="float-right text-5xl m-5 hidden mq1825:block" />
+      <div className="absolute top-[40px] left-[24px] w-[151px] flex flex-row items-center justify-start gap-[23px]">
         <button className="cursor-pointer [border:none] p-[11px] bg-primary1 h-[53px] w-[53px] rounded-121xl flex flex-row items-center justify-center box-border">
           <img
             className="h-[31px] w-[31px] relative object-contain"
@@ -38,18 +40,18 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="absolute top-[78.5px] left-[244px] w-6 h-6 overflow-hidden [transform:_rotate(-180deg)] [transform-origin:0_0] z-[2]" />
+      <div className="absolute top-[78.5px] left-[244px] w-6 h-6 overflow-hidden [transform:_rotate(-180deg)] [transform-origin:0_0]" />
       <img
-        className="absolute top-[122px] left-[11px] w-[233.3px] h-px z-[2]"
+        className="absolute top-[122px] left-[11px] w-[233.3px] h-px z-50"
         loading="lazy"
         alt=""
         src="/vector-6.svg"
       />
-      <div className="absolute top-[692px] left-[24px] rounded-xl bg-gray-400 w-[216px] h-[185.3px] z-[2]">
+      <div className="absolute top-[692px] left-[24px] rounded-xl bg-gray-400 w-[216px] h-[185.3px]">
         <div className="absolute bottom-[134.2px] left-[calc(50%_-_93px)] rounded-xl bg-text1 w-[35px] h-[36.1px]">
           <div className="absolute bottom-[0px] left-[calc(50%_-_17.5px)] rounded-xl bg-text1 w-full h-full hidden" />
           <img
-            className="absolute bottom-[5.6px] left-[calc(50%_-_12px)] w-6 h-[24.8px] overflow-hidden z-[1]"
+            className="absolute bottom-[5.6px] left-[calc(50%_-_12px)] w-6 h-[24.8px] overflow-hidden"
             loading="lazy"
             alt=""
             src="/ioniconhhelpcircle.svg"
