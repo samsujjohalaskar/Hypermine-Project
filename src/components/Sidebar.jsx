@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 const Sidebar = () => {
   return (
-    <div className="absolute sticky top-[2px] left-[0px] rounded-xl bg-gainsboro box-border w-[265px] h-[2867px] z-[1] text-left text-sm text-text3 font-body-2 border-[1px] border-solid border-stroke-2">
+    <div className="top-[2px] left-[0px] rounded-xl bg-gainsboro box-border w-[265px] h-[2867px] z-[1] text-left text-sm text-text3 font-body-2 border-[1px] border-solid border-stroke-2">
       <div className="absolute top-[0px] left-[0px] rounded-xl bg-gainsboro box-border w-full h-full hidden border-[1px] border-solid border-stroke-2" />
       <div className="absolute top-[172px] left-[23px] rounded-lg bg-gray-400 box-border w-[221px] overflow-hidden flex flex-col items-start justify-start py-[9px] px-0 z-[2] text-xs border-[1px] border-solid border-stroke1">
         <div className="w-[157px] flex flex-col items-start justify-start py-0 px-5 box-border">
