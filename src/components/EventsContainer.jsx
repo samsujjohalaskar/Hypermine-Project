@@ -69,7 +69,7 @@ const EventsContainer = () => {
                 </div>
             </div>
             {eventList && eventList.map((e, i) => (
-                <Event event={e} />
+                <Event event={e} key={i}/>
             ))}
             <Paginator pageNumber={pageNumber} setPageNumber={setPageNumber} />
         </>
