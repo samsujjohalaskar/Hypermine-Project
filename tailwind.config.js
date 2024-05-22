@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       colors: {
         "prymary-blue": "#020616",
+        "save-button-bg": "#2656d6",
+        "via-color": "#070F2B",
+        "three-line": "#E1F7F5",
         shadow2: "rgba(30, 80, 255, 0.5)",
         "primary-1": "#0c0115",
         darkslategray: "#3a3a3a",
@@ -74,6 +77,9 @@ module.exports = {
       },
       mq450: {
         raw: "screen and (max-width: 450px)",
+      },
+      min1900: {
+        raw: "screen and (min-width: 1900px)",
       },
     },
   },

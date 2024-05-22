@@ -4,7 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const Sidebar = ({ showSidebar, onShowbar }) => {
   return (
-    <div className={`top-[2px] ${!showSidebar ? "mq1825:hidden bg-gray-100" : "bg-prymary-blue"} left-[0px] rounded-xl box-border w-[265px] h-screen text-left text-sm text-text3 font-body-2 border-[1px] border-solid border-stroke-2`}>
+    <div className={`top-[2px] ${!showSidebar ? "mq1825:hidden bg-gray-100" : "bg-prymary-blue"} left-[0px] rounded-t-3xl box-border w-[265px] h-screen text-left text-sm text-text3 font-body-2 border-[1px] border-solid border-stroke-2`}>
       <div className="absolute top-[0px] left-[0px] rounded-xl bg-gainsboro box-border w-full h-screen hidden border-[1px] border-solid border-stroke-2" />
       <div className="absolute top-[172px] left-[23px] rounded-lg bg-gray-400 box-border w-[221px] overflow-hidden flex flex-col items-start justify-start py-[9px] px-0 text-xs border-[1px] border-solid border-stroke1">
         <div className="w-[157px] flex flex-col items-start justify-start py-0 px-5 box-border">
@@ -47,7 +47,7 @@ const Sidebar = ({ showSidebar, onShowbar }) => {
         alt=""
         src="/vector-6.svg"
       />
-      <div className="absolute top-[692px] left-[24px] rounded-xl bg-gray-400 w-[216px] h-[185.3px]">
+      <div className="absolute bottom-10 left-[24px] rounded-xl bg-gray-400 w-[216px] h-[185.3px]">
         <div className="absolute bottom-[134.2px] left-[calc(50%_-_93px)] rounded-xl bg-text1 w-[35px] h-[36.1px]">
           <div className="absolute bottom-[0px] left-[calc(50%_-_17.5px)] rounded-xl bg-text1 w-full h-full hidden" />
           <img

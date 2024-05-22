@@ -17,7 +17,7 @@ const Paginator = ({ pageNumber, setPageNumber }) => {
 
   return (
     <div className="self-stretch flex flex-row items-start justify-center pt-0 pb-[221px] pr-5 pl-[297px] shrink-0 text-center text-xs text-text4 font-abhaya-libre mq925:pl-[148px] mq925:box-border mq450:pl-5 mq450:box-border">
-      <div className="w-[200px] flex flex-row items-start justify-between shrink-0 [debug_commit:1de1738] gap-[20px]">
+      <div className="w-[200px] flex flex-row items-start justify-between shrink-0 gap-[20px]">
         <div className="flex flex-col items-start justify-start pt-[5px] px-0 pb-0">
           <img
             onClick={() => pageNumber !== 1 ? handlePageClick(pageNumber - 1) : ""}

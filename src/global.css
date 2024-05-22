@@ -5,9 +5,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   @apply leading-[normal] m-0;
 }
+
 *,
 ::before,
 ::after {
@@ -16,6 +18,39 @@ body {
 
 @media (max-width: 1914px) {
   .adjust-pl {
-    padding-left: 35px !important; /* using !important to override inline styles */
+    padding-left: 35px !important;
+    /* using !important to override inline styles */
   }
+}
+
+.ql-toolbar.ql-snow {
+  padding: 0 0 0 10px;
+}
+
+.ql-toolbar.ql-snow {
+  border: none;
+  border-bottom: 0.5px solid rgb(30 41 59);
+}
+
+.ql-container.ql-snow {
+  border: none;
+}
+
+.ql-formats {
+  display: table-cell;
+  margin-right: 0px !important;
+  padding: 6px;
+}
+
+.ql-picker-label {
+  color: white;
+}
+
+.quill>.ql-container>.ql-editor.ql-blank::before {
+  font-size: 13px;
+  color: rgb(71 85 105);
+}
+
+.save-width {
+  width: -webkit-fill-available;
 }

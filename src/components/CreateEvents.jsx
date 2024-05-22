@@ -11,7 +11,7 @@ const CreateEvents = () => {
   return (
     <div className="self-stretch flex flex-row items-start justify-end pt-0 px-[35px] pb-[31px] box-border max-w-full shrink-0 text-left text-11xl text-text1 font-body-2">
       <div className="w-[1579px] flex flex-row items-start justify-start relative max-w-full pt-32">
-        <div className="flex-1 rounded-xl bg-gray-400 flex flex-col items-start justify-start pt-[50px] pb-[110px] pr-[76px] pl-[105px] box-border gap-[15px] shrink-0 [debug_commit:1de1738] max-w-full mq925:pl-[26px] mq925:box-border mq1350:pl-[52px] mq1350:pr-[38px] mq1350:box-border">
+        <div className="flex-1 rounded-xl bg-gray-400 flex flex-col items-start justify-start pt-[50px] pb-[110px] pr-[76px] pl-[105px] box-border gap-[15px] shrink-0 max-w-full mq925:pl-[26px] mq925:box-border mq1350:pl-[52px] mq1350:pr-[38px] mq1350:box-border">
           <h1 className="m-0 relative text-inherit font-bold font-inherit mq925:text-5xl mq450:text-lg">
             Create Events
           </h1>
@@ -27,9 +27,9 @@ const CreateEvents = () => {
             </div>
             <Button
               onClick={handleClick}
-              className="h-14 w-[258px] font-bold text-lg gap-x-4"
+              className="h-14 w-max pl-12 pr-12 font-bold text-sm gap-1"
               startIcon={
-                <FaPlus style={{ fontSize: "26px" }} />
+                <FaPlus size={20} />
               }
               disableElevation={true}
               variant="contained"
