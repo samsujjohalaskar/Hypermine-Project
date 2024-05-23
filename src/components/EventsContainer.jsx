@@ -30,12 +30,12 @@ const EventsContainer = () => {
                     Your Events
                 </b>
             </div>
-            <div className="self-stretch flex flex-row items-start justify-end pt-0 px-[35px] pb-[7px] box-border max-w-full shrink-0 text-base text-text4">
+            <div className="self-stretch flex flex-row items-start justify-end pt-0 px-[35px] pb-[7px] box-border max-w-full shrink-0 text-base text-text4 mq1825:w-max mq2500:w-max mq2500:pl-80">
                 <div className="w-[1560px] flex flex-row items-end justify-between shrink-0 max-w-full gap-[20px] mq1350:flex-wrap mq1350:justify-center border-b-[3px] border-solid border-gray-100 mq1350:border-none">
                     <div className="w-[724px] flex flex-col items-start justify-end pt-0 px-0 box-border max-w-full">
                         <div className="self-stretch flex flex-row items-start justify-between gap-[20px] mq925:flex-wrap">
                             {["All", "Ongoing", "Completed", "Drafts", "Pending Rewards"].map((item, index) => (
-                                <h2 onClick={() => setStatus(item)} key={index} className={`${status === item ? "text-text3 border-b-[3px] border-solid border-save-button-bg" : ""} border-b-[3px] border-solid border-transparent pb-3 cursor-pointer m-0 relative text-inherit leading-[140%] font-bold font-inherit inline-block min-w-[22px]`}>
+                                <h2 onClick={() => setStatus(item)} key={index} className={`${status === item ? "text-text3 border-b-[3px] border-solid border-save-button-bg" : "border-transparent"} border-b-[3px] border-solid pb-3 cursor-pointer m-0 relative text-inherit leading-[140%] font-bold font-inherit inline-block min-w-[22px]`}>
                                     {item}
                                 </h2>
                             ))}

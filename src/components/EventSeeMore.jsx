@@ -1,27 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { PiDotsThreeOutlineVerticalFill } from "react-icons/pi";
+import SeeMore from "./SeeMore";
 
 const EventSeeMore = () => {
+    const [seeMore, showSeeMore] = useState(false);
     return (
-        <div className="!m-[0] absolute top-[40px] left-[1525px] overflow-hidden flex flex-col items-center justify-start py-0 pr-[3px] pl-[2.6px] gap-[2px]">
-            <img
-                className="w-[2.8px] h-[3px] relative"
-                loading="lazy"
-                alt=""
-                src="/vector-3.svg"
-            />
-            <img
-                className="w-[2.8px] h-[3px] relative"
-                loading="lazy"
-                alt=""
-                src="/vector-4.svg"
-            />
-            <img
-                className="w-[2.8px] h-[3px] relative"
-                loading="lazy"
-                alt=""
-                src="/vector-5.svg"
-            />
-        </div>
+        <>
+            <div className="ml-auto cursor-pointer" onClick={() => showSeeMore(!seeMore)}>
+                <PiDotsThreeOutlineVerticalFill size={16} />
+            </div>
+            {seeMore && (<SeeMore />)}
+        </>
     )
 }
 

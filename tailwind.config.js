@@ -16,10 +16,10 @@ module.exports = {
         gainsboro: "rgba(217, 217, 217, 0.06)",
         "stroke-2": "rgba(20, 20, 20, 0)",
         gray: {
-          "100": "rgba(255, 255, 255, 0.06)",
-          "200": "rgba(255, 255, 255, 0.7)",
-          "300": "rgba(255, 255, 255, 0.1)",
-          "400": "rgba(255, 255, 255, 0.08)",
+          100: "rgba(255, 255, 255, 0.06)",
+          200: "rgba(255, 255, 255, 0.7)",
+          300: "rgba(255, 255, 255, 0.1)",
+          400: "rgba(255, 255, 255, 0.08)",
         },
         primary1: "#020610",
         stroke1: "#5a5a5a",
@@ -66,6 +66,12 @@ module.exports = {
       inherit: "inherit",
     },
     screens: {
+      mq2500: {
+        raw: "screen and (min-width: 1826px) and (max-width: 2500px)",
+      },
+      min1900: {
+        raw: "screen and (min-width: 1900px)",
+      },
       mq1825: {
         raw: "screen and (max-width: 1825px)",
       },
@@ -77,9 +83,6 @@ module.exports = {
       },
       mq450: {
         raw: "screen and (max-width: 450px)",
-      },
-      min1900: {
-        raw: "screen and (min-width: 1900px)",
       },
     },
   },
