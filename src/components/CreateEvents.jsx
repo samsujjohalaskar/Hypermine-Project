@@ -1,13 +1,8 @@
 import React from "react";
 import { Button } from "@mui/material";
 import { FaPlus } from "react-icons/fa6";
-import { useNavigate } from "react-router-dom";
 
-const CreateEvents = () => { 
-  const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/create-event");
-  }
+const CreateEvents = ({onCreateEvent}) => { 
   return (
     <div className="self-stretch flex flex-row items-start justify-end pt-0 px-[35px] pb-[31px] box-border max-w-full shrink-0 text-left text-11xl text-text1 font-body-2 mq1825:w-max mq2500:w-max mq2500:pl-80">
       <div className="w-[1579px] flex flex-row items-start justify-start relative max-w-full pt-32">
@@ -25,7 +20,7 @@ const CreateEvents = () => {
               </h2>
             </div>
             <Button
-              onClick={handleClick}
+              onClick={onCreateEvent}
               className="h-14 w-max pl-12 pr-12 font-bold text-sm gap-1"
               startIcon={
                 <FaPlus size={20} />

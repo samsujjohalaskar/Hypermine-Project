@@ -93,6 +93,7 @@ const BasicInfo = () => {
                     </div>
                 </div>
             </div>
+            {/* form fields */}
             <div className="flex-1 flex flex-row items-start justify-start gap-[0.5px] min-w-[921px] max-w-full text-mini-2 mq1350:min-w-full">
                 <div className="flex-1 flex flex-col items-start justify-start pt-[30px] px-0 pb-0 box-border max-w-full mq1350:pt-0">
                     <div className="self-stretch flex flex-col items-start justify-start gap-[254px] max-w-full mq925:gap-[63px] mq1350:gap-[127px] mq450:gap-[32px]">
